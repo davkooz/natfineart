@@ -17,16 +17,16 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-          type: 'OAuth2',
-          user: 'klientnatalliafineart@gmail.com',
-          clientId: '750766576923-gsjiem73fpjgm4q189fvg5i0va5l3ka1.apps.googleusercontent.com',
-          clientSecret: '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',
-          refreshToken: '1//04nqyvgCgog5ECgYIARAAGAQSNwF-L9IrUDKaalQjpIfXcQKcEucEbD5SFapKi69pRhJt3fZHdTD4-qck4Eh1lTYHgbgtvu72j8g'
+        type: 'OAuth2',
+        user: 'klientnatalliafineart@gmail.com',
+        clientId: '750766576923-gsjiem73fpjgm4q189fvg5i0va5l3ka1.apps.googleusercontent.com',
+        clientSecret: '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',
+        refreshToken: '1//04nqyvgCgog5ECgYIARAAGAQSNwF-L9IrUDKaalQjpIfXcQKcEucEbD5SFapKi69pRhJt3fZHdTD4-qck4Eh1lTYHgbgtvu72j8g'
 
       }
-  });
-    
-  
+    });
+
+
 
     // Set up email data
     const mailOptions = {
@@ -42,11 +42,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       res.status(200).json({ success: true });
     } catch (error) {
       console.error("Error while sending mail:", error);
-      if (error instanceof Error) {
-          return res.status(500).json({ error: error.message });
+
+      if (typeof error === 'object' && error !== null && 'message' in error) {
+        return res.status(500).json({ error: error.message });
       } else {
-          return res.status(500).json({ error: "An unknown error occurred." });
+        return res.status(500).json({ error: 'An unexpected error occurred.' });
       }
+    }
+
   }
-  }  
 };
