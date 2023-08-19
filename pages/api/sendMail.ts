@@ -41,10 +41,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       await transporter.sendMail(mailOptions);
       res.status(200).json({ success: true });
     } catch (error) {
-      console.error("Error while sending mail:", error); // Add this to see detailed error
-      return res.status(500).json({ error: error.message });
-    }
-  } else {
-    res.status(405).end();
+      console.error("Error while sending mail:", error);
+      if (error instanceof Error) {
+          return res.status(500).json({ error: error.message });
+      } else {
+          return res.status(500).json({ error: "An unknown error occurred." });
+      }
   }
+  }  
 };
