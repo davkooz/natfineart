@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Wideoportret = () => {
     return (
-        <main className="bg-white min-h-screen flex flex-col">
+        <main className="bg-white min-h-screen min-w-screen flex flex-col">
             <Navbar />
             <div className="flex flex-col items-center justify-center mb-4">
                 <h1 className="font-bold text-4xl">Wideoportret</h1>

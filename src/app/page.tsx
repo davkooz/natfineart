@@ -9,7 +9,7 @@ import ContactUs from './components/contactus';
 
 export default function Home() {
   return (
-    <main className="bg-white min-h-screen flex flex-col">
+    <main className="bg-white min-h-screen min-w-screen flex flex-col">
       <Navbar/>
       <Carousel/>
       <ContactUs/>

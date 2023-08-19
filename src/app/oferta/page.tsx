@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Oferta = () => {
     return (
-        <main className="bg-white min-h-screen flex flex-col">
+        <main className="bg-white min-w-screen min-h-screen flex flex-col">
             <Navbar />
             <div className="flex mb-8 w-full md:w-[44rem] self-center px-4">
                 <p className="text-center text-l">
