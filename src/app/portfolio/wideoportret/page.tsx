@@ -10,7 +10,7 @@ const Wideoportret = () => {
         <main className="bg-white min-h-screen overflow-x-hidden flex flex-col">
             <Navbar />
             <div className="flex flex-col items-center justify-center mb-4">
-                <h1 className="font-bold text-4xl">Wideoportret</h1>
+                <h1 className="font-bold text-4xl text-black">Wideoportret</h1>
                 <hr className="border-black border-1 rounded-full w-96 mt-2" />
             </div>
             <GalleryVideos />

@@ -11,7 +11,7 @@ const Portfolio = () => {
     return (
         <main className="bg-white overflow-x-hidden min-h-screen flex flex-col">
             <Navbar />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mx-2 sm:mx-4 md:mx-6 lg:mx-8 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mx-2 sm:mx-4 md:mx-6 lg:mx-8 my-8 md:my-6 sm:my-4">
                 <div className="flex relative">
                     <Link href="/portfolio/fotografia_portretowa">
                         <motion.button

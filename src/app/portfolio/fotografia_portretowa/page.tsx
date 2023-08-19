@@ -10,7 +10,7 @@ const FotografiaPortretowa = () => {
         <main className="bg-white overflow-x-hidden min-h-screen flex flex-col">
             <Navbar />
             <div className="flex flex-col items-center justify-center mb-4">
-                <h1 className="font-bold text-4xl">Fotografia Portretowa</h1>
+                <h1 className="font-bold text-4xl text-black">Fotografia Portretowa</h1>
                 <hr className="border-black border-1 rounded-full w-96 mt-2" />
             </div>
             <Gallery />
