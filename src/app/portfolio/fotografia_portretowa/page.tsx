@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const FotografiaPortretowa = () => {
     return (
-        <main className="bg-white min-w-screen min-h-screen flex flex-col">
+        <main className="bg-white overflow-x-hidden min-h-screen flex flex-col">
             <Navbar />
             <div className="flex flex-col items-center justify-center mb-4">
                 <h1 className="font-bold text-4xl">Fotografia Portretowa</h1>

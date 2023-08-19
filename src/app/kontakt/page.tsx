@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Kontakt: React.FC = () => {
     return (
-        <main className="bg-white min-h-screen flex flex-col px-4">
+        <main className="bg-white overflow-x-hidden min-h-screen flex flex-col px-4">
             <Navbar />
             
             <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16 justify-center items-center mt-6">

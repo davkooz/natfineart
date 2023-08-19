@@ -3,7 +3,7 @@ import Footer from '../components/footer';
 
 export default function Regulamin() {
   return (
-    <main className="bg-white min-w-screen min-h-screen flex flex-col">
+    <main className="bg-white min-h-screen flex flex-col overflow-x-hidden">
       <Navbar />
 
       <div className="p-8 max-w-screen-lg mx-auto flex-grow">

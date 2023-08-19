@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <main className="bg-white min-w-screen flex flex-col mt-8 border-t-2 pt-8">
+        <main className="bg-white overflow-x-hidden flex flex-col mt-8 border-t-2 pt-8">
             <div className="flex justify-between">
                 <div className="flex flex-row gap-4 ml-12">
                     <Link href="https://www.facebook.com/NatalliaFineArtPhotography" target='_blank'>

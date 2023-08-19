@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 
 const Omnie = () => {
     return (
-        <main className="bg-white min-w-screen min-h-screen flex flex-col">
+        <main className="bg-white overflow-x-hidden min-h-screen flex flex-col">
             <Navbar />
             <div className="flex-grow flex flex-col md:flex-row justify-center items-center p-4">
                 <div className="mb-4 md:mb-0 md:mr-4 flex-shrink-0">

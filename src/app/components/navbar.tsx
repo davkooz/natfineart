@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center min-w-screen justify-between flex-wrap bg-white border-b-2 mb-8 sm:justify-center">
+    <nav className="flex items-center overflow-x-hidden justify-between flex-wrap bg-white border-b-2 mb-8 sm:justify-center">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link href="/">
         <Image src="/logo2.png" alt="Natallia Wyszkowska Logo" width={400} height={284} />

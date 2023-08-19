@@ -3,7 +3,7 @@ import Footer from '../components/footer';
 
 export default function PolitykaPrywatnosci() {
   return (
-    <main className="min-w-screen bg-white min-h-screen flex flex-col">
+    <main className="overflow-x-hidden bg-white min-h-screen flex flex-col">
       <Navbar/>
 
       <div className="p-8 max-w-screen-lg mx-auto flex-grow">
