@@ -31,7 +31,7 @@ export default function GalleryVideos() {
 
     return (
         <div>
-            <div className="grid grid-cols-4 gap-8 mx-4">
+            <div className="grid lg:grid-cols-4 md:grid-cold-2 sm:grid-cols-1 gap-8 mx-8">
                 {videos.map((path, idx) => (
                     <div key={idx} className="relative h-[44rem] cursor-pointer" onClick={() => handleVideoClick(path)}>
                         <video controls className="w-full h-full">

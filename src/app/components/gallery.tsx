@@ -34,7 +34,7 @@ export default function Gallery() {
 
     return (
         <div>
-            <div className="grid grid-cols-3 gap-8 mx-8">
+            <div className="grid lg:grid-cols-3 md:grid-cold-2 sm:grid-cols-1 gap-8 mx-8">
                 {images.map((path, idx) => (
                     <div key={idx} className="relative h-[44rem] cursor-pointer" onClick={() => handleImageClick(path)}> 
                         <img src={path} alt={`Gallery Image ${idx + 1}`} className="object-cover w-full h-full object-top" />
