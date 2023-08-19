@@ -24,4 +24,34 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('ttf'),
+  url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 25%;
+}
+
+.image-container:hover + div {
+  opacity: 0;
 }
