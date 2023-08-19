@@ -15,27 +15,27 @@ const Kontakt: React.FC = () => {
                     <div className="flex items-center space-x-4 md:space-x-8">
                         <Image src="/icons/email.svg" alt="emailicon" width={32} height={32} />
                         <Link href="mailto:natalliafineart@gmail.com">
-                            <div className="text-lg md:text-xl cursor-pointer">natalliafineart@gmail.com</div>
+                            <div className="text-lg md:text-xl cursor-pointer text-black">natalliafineart@gmail.com</div>
                         </Link>
                     </div>
                     <div className="flex items-center space-x-4 md:space-x-8">
                         <Image src="/icons/phone.svg" alt="phoneicon" width={32} height={32} />
-                        <div className="text-lg md:text-xl">+48 690 976 993</div>
+                        <div className="text-lg md:text-xl text-black">+48 690 976 993</div>
                     </div>
                     <div className="flex items-center space-x-4 md:space-x-8">
                         <Image src="/icons/location.svg" alt="locationicon" width={32} height={32} />
-                        <div className="text-lg md:text-xl">Warszawa - Mińsk Mazowiecki</div>
+                        <div className="text-lg md:text-xl text-black">Warszawa - Mińsk Mazowiecki</div>
                     </div>
                     <Link href="https://www.instagram.com/natallia.wyszkowska/" target='_blank'>
                         <div className="flex items-center space-x-4 md:space-x-8 cursor-pointer">
                             <Image src="/icons/instagram.svg" alt="instagramicon" width={32} height={32} />
-                            <div className="text-lg md:text-xl">natallia.wyszkowska</div>
+                            <div className="text-lg md:text-xl text-black">natallia.wyszkowska</div>
                         </div>
                     </Link>
                     <Link href="https://www.facebook.com/NatalliaFineArtPhotography" target='_blank'>
                         <div className="flex items-center space-x-4 md:space-x-8 cursor-pointer">
                             <Image src="/icons/facebook.svg" alt="facebookicon" width={32} height={32} />
-                            <div className="text-lg md:text-xl">Natallia Wyszkowska - Fotografia Film</div>
+                            <div className="text-lg md:text-xl text-black">Natallia Wyszkowska - Fotografia Film</div>
                         </div>
                     </Link>
                 </div>
