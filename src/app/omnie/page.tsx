@@ -12,8 +12,8 @@ const Omnie = () => {
                     <Image src="/profilowe2.jpg" alt='profilowe' className='rounded' width={400} height={400} />
                 </div>
                 <div className='text-center px-4 md:px-0 max-w-2xl'>
-                    <h1 className='font-bold text-xl mb-4'>Witam Ciebie serdecznie na mojej stronie!</h1>
-                    <p>
+                    <h1 className='font-bold text-xl mb-4 text-black'>Witam Ciebie serdecznie na mojej stronie!</h1>
+                    <p className='text-black'>
                         <br />
                         Pozwól, że opowiem Ci kilka słów o mnie i mojej pasji.<br /><br />
                         Mam na imię Natallia.<br /><br />

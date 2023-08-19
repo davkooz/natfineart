@@ -52,7 +52,7 @@ const ContactUs: React.FC = () => {
                 </div>
             }
             <div className="flex-1 flex flex-col justify-center items-center pt-16 lg:pt-12">
-                <p className="mb-4 text-3xl">Masz jakieś pytania?</p>
+                <p className="mb-4 text-3xl text-black">Masz jakieś pytania?</p>
                 <h2 className="text-2xl font-bold text-black">Napisz do mnie!</h2>
 
                 <form className="flex flex-col gap-4 mt-2 px-10 lg:mt-6 min-w-full lg:min-w-[500px]" onSubmit={handleSubmit}>
