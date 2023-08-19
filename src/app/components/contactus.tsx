@@ -4,16 +4,15 @@ import React, { useState } from "react";
 
 const ContactUs: React.FC = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false);  // State for the success popup
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [successMessageOpacity, setSuccessMessageOpacity] = useState(0);
 
-
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         try {

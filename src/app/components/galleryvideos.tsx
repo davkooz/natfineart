@@ -14,7 +14,7 @@ export default function GalleryVideos() {
         '/portfolio/wideoportret/zachod_kaki.mp4',
     ];
 
-    function handleVideoClick(videoPath) {
+    function handleVideoClick(videoPath : string) {
         setCurrentVideo(videoPath);
         setIsModalOpen(true);
     }
@@ -23,7 +23,7 @@ export default function GalleryVideos() {
         setIsModalOpen(false);
     }
 
-    function handleBackdropClick(event) {
+    function handleBackdropClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
         if (event.target === event.currentTarget) {
             handleCloseModal();
         }

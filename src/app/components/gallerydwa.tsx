@@ -22,7 +22,7 @@ export default function Gallerydwa() {
         '/portfolio/fotografia_dziecieca-rodzinna/konrovyj-svet-v-polden.jpg',
     ];
 
-    function handleImageClick(imagePath) {
+    function handleImageClick(imagePath: string) {
         setCurrentImage(imagePath);
         setIsModalOpen(true);
     }
@@ -30,7 +30,8 @@ export default function Gallerydwa() {
     function handleCloseModal() {
         setIsModalOpen(false);
     }
-    function handleBackdropClick(event) {
+
+    function handleBackdropClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
         if (event.target === event.currentTarget) {
             handleCloseModal();
         }

@@ -17,7 +17,7 @@ export default function Gallery() {
         '/portfolio/fotografia_portretowa/kaki-z-gitara,.jpg',
     ];
 
-    function handleImageClick(imagePath) {
+    function handleImageClick(imagePath: string) {
         setCurrentImage(imagePath);
         setIsModalOpen(true);
     }
@@ -26,7 +26,7 @@ export default function Gallery() {
         setIsModalOpen(false);
     }
 
-    function handleBackdropClick(event) {
+    function handleBackdropClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
         if (event.target === event.currentTarget) {
             handleCloseModal();
         }
