@@ -23,7 +23,7 @@ const Oferta = () => {
                     { title: "Pakiet Rozszerzony", price: "800,00 zł", items: ["15 zdjęć w wersji elektronicznej", "15 odbitek"] },
                     { title: "Pakiet MAX", price: "1000,00 zł", items: ["25 zdjęć w wersji elektronicznej", "25 odbitek"] },
                     { title: "Film z Sesji", price: "1500,00 zł", items: ["Czas trwania filmu to 3-4 minuty"] },
-                    { title: "Klip/Reels", price: "500,00 zł", items: ["Idealny do social media"] }
+                    { title: "Klip/Reels", price: "500,00 zł", items: ["Klip 30-60 sekund","Idealny do social media"] }
                 ].map((pakiet, index) => (
                     <motion.div 
                         whileHover={{ y: 6, transition: { duration: 0.3 } }} 
