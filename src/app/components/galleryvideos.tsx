@@ -12,6 +12,7 @@ export default function GalleryVideos() {
         '/portfolio/wideoportret/Tosieńka.mp4',
         '/portfolio/wideoportret/współpraca.mp4',
         '/portfolio/wideoportret/zachod_kaki.mp4',
+        '/portfolio/wideoportret/Daria.mp4',
     ];
 
     function handleVideoClick(videoPath : string) {
