@@ -9,12 +9,13 @@ const Oferta = () => {
     return (
         <main className="bg-white overflow-x-hidden min-h-screen flex flex-col">
             <Navbar />
-            <div className="flex justify-center mb-8 w-full md:w-[44rem] self-center px-4">
+            <div className="flex justify-center mb-8 w-full md:w-[44rem] self-center px-4 flex-col text-center gap-6">
                 <h1 className=" text-black text-4xl font-bold">Promocja w pakiecie podstawowym!</h1>
+                <h2 className=" text-black text-3xl font-bold">Pamiątkowy reels GRATIS!</h2>
             </div>
             <div className="flex flex-wrap justify-center gap-8 px-4 mb-4">
                 {[
-                    { title: "Pakiet Podstawowy", price: "500,00 zł", items: ["Pamiątkowy reels GRATIS", "5 zdjęć w wersji elektronicznej", "5 odbitek", "Mini sesja do 40 min"] },
+                    { title: "Pakiet Podstawowy", price: "500,00 zł", items: ["5 zdjęć w wersji elektronicznej","Studio w pakiecie"] },
                 ].map((pakiet, index) => (
                     <motion.div
                         whileHover={{ y: 6, transition: { duration: 0.3 } }}
