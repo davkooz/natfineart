@@ -55,3 +55,33 @@ body {
 .image-container:hover + div {
   opacity: 0;
 }
+.icon {
+  transition: filter 0.5s ease, background-color 0.5s ease;
+}
+
+/* Facebook icon */
+.facebookIcon {
+  filter: none;
+}
+
+.facebookIcon:hover {
+  filter: invert(31%) sepia(92%) saturate(5780%) hue-rotate(194deg) brightness(100%) contrast(100%);
+}
+
+/* Instagram icon */
+.instagramIcon {
+  filter: none;
+}
+
+.instagramIcon:hover {
+  filter: invert(35%) sepia(82%) saturate(5471%) hue-rotate(303deg) brightness(97%) contrast(106%);
+}
+
+/* TikTok icon */
+.tiktokIcon {
+  filter: none;
+}
+
+.tiktokIcon:hover {
+  filter: brightness(1.2) saturate(2) hue-rotate(240deg) drop-shadow(0 0 10px rgba(255, 0, 150, 0.5)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+}

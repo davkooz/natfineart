@@ -6,7 +6,6 @@ import EmblaCarousel from 'embla-carousel';
 type EmblaCarousel = {
   scrollPrev: () => void;
   scrollNext: () => void;
-  // You can add other methods and properties of the EmblaCarousel instance if needed
 };
 
 const Carousel: React.FC = () => {

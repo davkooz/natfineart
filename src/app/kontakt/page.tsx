@@ -41,7 +41,7 @@ const Kontakt: React.FC = () => {
                 </div>
                 
                 <div className="mt-8 md:mt-0">
-                    <Image src="/tosialod.jpg" alt="tosialod" width={300} height={300} className="rounded md:w-[600px] md:h-[600px]" />
+                    <Image src="/tosialod.jpg" alt="tosialod" width={600} height={600} quality={100}  />
                 </div>
             </div>
             

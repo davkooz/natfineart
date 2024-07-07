@@ -63,7 +63,7 @@ const ContactUs: React.FC = () => {
                         maxLength={128}
                         type='text'
                         placeholder="Imię"
-                        className="bg-white text-black outline-none border-2 border-black rounded-3xl px-8 py-2"
+                        className="transition-all ease-in-out delay-250 bg-white text-black outline-none border-2 border-black rounded-3xl px-8 py-2 focus:border-red-600"
                         value={formData.name}
                         onChange={handleInputChange}
                     />
@@ -74,7 +74,7 @@ const ContactUs: React.FC = () => {
                         required
                         maxLength={128}
                         placeholder="Twój adres email"
-                        className="bg-white text-black outline-none border-2 border-black rounded-3xl px-8 py-2"
+                        className="transition-all ease-in-out delay-250 bg-white text-black outline-none border-2 border-black rounded-3xl px-8 py-2 focus:border-red-600"
                         value={formData.email}
                         onChange={handleInputChange}
                     />
@@ -84,14 +84,14 @@ const ContactUs: React.FC = () => {
                         required
                         maxLength={1048576}
                         placeholder="Dodatkowe informacje"
-                        className="bg-white text-black outline-none border-2 border-black rounded-3xl px-8 py-6 min-h-[16em]"
+                        className="transition-all ease-in-out delay-250 bg-white text-black outline-none border-2 border-black rounded-3xl px-8 py-6 min-h-[16em] focus:border-red-600"
                         value={formData.message}
                         onChange={handleInputChange}
                     ></textarea>
                     <div className="text-center mt-8">
                         <button
                             type="submit"
-                            className="bg-black text-white border-2 border-black rounded-3xl px-8 py-2 w-1/2 hover:bg-white hover:text-black">
+                            className="animate-bounce transition-all ease-in-out delay-250 bg-black text-white border-2 border-black rounded-3xl px-8 py-2 w-1/2 hover:bg-white hover:text-black">
                             Wyślij
                         </button>
                     </div>
